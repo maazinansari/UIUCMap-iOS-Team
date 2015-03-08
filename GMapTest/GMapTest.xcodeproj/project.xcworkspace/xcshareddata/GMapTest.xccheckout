@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>628F8A10-1B6F-4CCB-88D9-F20365D3BA90</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GMapTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>59EBB725143719B8501D3AC48EC18532603F212E</key>
+		<string>https://github.com/mansari2/UIUCMap-iOS-Team.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GMapTest/GMapTest.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>59EBB725143719B8501D3AC48EC18532603F212E</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mansari2/UIUCMap-iOS-Team.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>59EBB725143719B8501D3AC48EC18532603F212E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>59EBB725143719B8501D3AC48EC18532603F212E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UIUCMap-iOS-Team</string>
+		</dict>
+	</array>
+</dict>
+</plist>
