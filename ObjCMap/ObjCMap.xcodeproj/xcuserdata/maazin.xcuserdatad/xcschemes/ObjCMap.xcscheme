@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0610"
+   LastUpgradeVersion = "0620"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1A4AC8BB1AA5258A00830440"
-               BuildableName = "First Map.app"
-               BlueprintName = "First Map"
-               ReferencedContainer = "container:First Map.xcodeproj">
+               BlueprintIdentifier = "1A5BEC7C1ABB637000E13869"
+               BuildableName = "ObjCMap.app"
+               BlueprintName = "ObjCMap"
+               ReferencedContainer = "container:ObjCMap.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1A4AC8D01AA5258A00830440"
-               BuildableName = "First MapTests.xctest"
-               BlueprintName = "First MapTests"
-               ReferencedContainer = "container:First Map.xcodeproj">
+               BlueprintIdentifier = "1A5BEC951ABB637000E13869"
+               BuildableName = "ObjCMapTests.xctest"
+               BlueprintName = "ObjCMapTests"
+               ReferencedContainer = "container:ObjCMap.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1A4AC8D01AA5258A00830440"
-               BuildableName = "First MapTests.xctest"
-               BlueprintName = "First MapTests"
-               ReferencedContainer = "container:First Map.xcodeproj">
+               BlueprintIdentifier = "1A5BEC951ABB637000E13869"
+               BuildableName = "ObjCMapTests.xctest"
+               BlueprintName = "ObjCMapTests"
+               ReferencedContainer = "container:ObjCMap.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1A4AC8BB1AA5258A00830440"
-            BuildableName = "First Map.app"
-            BlueprintName = "First Map"
-            ReferencedContainer = "container:First Map.xcodeproj">
+            BlueprintIdentifier = "1A5BEC7C1ABB637000E13869"
+            BuildableName = "ObjCMap.app"
+            BlueprintName = "ObjCMap"
+            ReferencedContainer = "container:ObjCMap.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -72,13 +72,14 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1A4AC8BB1AA5258A00830440"
-            BuildableName = "First Map.app"
-            BlueprintName = "First Map"
-            ReferencedContainer = "container:First Map.xcodeproj">
+            BlueprintIdentifier = "1A5BEC7C1ABB637000E13869"
+            BuildableName = "ObjCMap.app"
+            BlueprintName = "ObjCMap"
+            ReferencedContainer = "container:ObjCMap.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -90,13 +91,14 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1A4AC8BB1AA5258A00830440"
-            BuildableName = "First Map.app"
-            BlueprintName = "First Map"
-            ReferencedContainer = "container:First Map.xcodeproj">
+            BlueprintIdentifier = "1A5BEC7C1ABB637000E13869"
+            BuildableName = "ObjCMap.app"
+            BlueprintName = "ObjCMap"
+            ReferencedContainer = "container:ObjCMap.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

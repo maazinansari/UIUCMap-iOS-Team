@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>First Map.xcscheme</key>
+		<key>ObjCMap.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1A4AC8BB1AA5258A00830440</key>
+		<key>1A5BEC7C1ABB637000E13869</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1A4AC8D01AA5258A00830440</key>
+		<key>1A5BEC951ABB637000E13869</key>
 		<dict>
 			<key>primary</key>
 			<true/>
