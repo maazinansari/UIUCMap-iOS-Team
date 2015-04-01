@@ -100,7 +100,13 @@
                             <outlet property="delegate" destination="rOZ-9G-Uhc" id="AJw-1X-6Lv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="pVn-5O-eTV"/>
+                    <navigationItem key="navigationItem" id="pVn-5O-eTV">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="mm3-ji-8un">
+                            <connections>
+                                <segue destination="AkB-SX-qTt" kind="presentation" id="lJ0-5w-gRy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MsH-xa-7bu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,6 +131,115 @@
             </objects>
             <point key="canvasLocation" x="3444" y="-183"/>
         </scene>
+        <!--Add Event View Controller-->
+        <scene sceneID="otj-DA-Nbj">
+            <objects>
+                <viewController title="Add Event View Controller" id="rrU-Bl-NxZ" customClass="AddEventViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vEd-sE-0gO"/>
+                        <viewControllerLayoutGuide type="bottom" id="qy1-eA-kUL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fpO-Lr-qj3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuH-Yq-UyF" userLabel="Name Label">
+                                <rect key="frame" x="20" y="89" width="36" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="elN-kA-1cG" userLabel="Name Text Field">
+                                <rect key="frame" x="96" y="84" width="484" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k60-17-iVd" userLabel="Address Label">
+                                <rect key="frame" x="20" y="133" width="36" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UE0-Yn-9G7" userLabel="Address Text Field">
+                                <rect key="frame" x="96" y="129" width="484" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7G-hb-ISn" userLabel="Date Label">
+                                <rect key="frame" x="20" y="177" width="36" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e1S-j9-PfK" userLabel="Date Text Field">
+                                <rect key="frame" x="96" y="174" width="484" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsq-Ky-kn3" userLabel="URL Label">
+                                <rect key="frame" x="20" y="223" width="36" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8AP-m9-jVw">
+                                <rect key="frame" x="96" y="219" width="484" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nsq-Ky-kn3" firstAttribute="top" secondItem="w7G-hb-ISn" secondAttribute="bottom" constant="29" id="2JO-km-zNC"/>
+                            <constraint firstAttribute="trailing" secondItem="UE0-Yn-9G7" secondAttribute="trailing" constant="20" id="30x-RI-EsB"/>
+                            <constraint firstItem="8AP-m9-jVw" firstAttribute="leading" secondItem="Nsq-Ky-kn3" secondAttribute="trailing" constant="40" id="5TR-ak-T2w"/>
+                            <constraint firstAttribute="trailing" secondItem="8AP-m9-jVw" secondAttribute="trailing" constant="20" id="7ky-uw-8Ve"/>
+                            <constraint firstItem="elN-kA-1cG" firstAttribute="leading" secondItem="SuH-Yq-UyF" secondAttribute="trailing" constant="40" id="A0E-9B-S6B"/>
+                            <constraint firstItem="UE0-Yn-9G7" firstAttribute="top" secondItem="elN-kA-1cG" secondAttribute="bottom" constant="20" id="FlY-19-0fF"/>
+                            <constraint firstItem="e1S-j9-PfK" firstAttribute="leading" secondItem="w7G-hb-ISn" secondAttribute="trailing" constant="40" id="KYb-3B-1ql"/>
+                            <constraint firstItem="elN-kA-1cG" firstAttribute="top" secondItem="vEd-sE-0gO" secondAttribute="bottom" constant="20" id="LQt-KL-Hqr"/>
+                            <constraint firstItem="SuH-Yq-UyF" firstAttribute="leading" secondItem="fpO-Lr-qj3" secondAttribute="leading" constant="20" id="PBN-yr-Fn8"/>
+                            <constraint firstItem="w7G-hb-ISn" firstAttribute="leading" secondItem="fpO-Lr-qj3" secondAttribute="leading" constant="20" id="QCI-jA-q7R"/>
+                            <constraint firstItem="UE0-Yn-9G7" firstAttribute="leading" secondItem="k60-17-iVd" secondAttribute="trailing" constant="40" id="WoB-5T-o3x"/>
+                            <constraint firstItem="w7G-hb-ISn" firstAttribute="top" secondItem="k60-17-iVd" secondAttribute="bottom" constant="27" id="Z3m-1F-51v"/>
+                            <constraint firstItem="e1S-j9-PfK" firstAttribute="top" secondItem="UE0-Yn-9G7" secondAttribute="bottom" constant="20" id="ZIC-sQ-b83"/>
+                            <constraint firstAttribute="trailing" secondItem="elN-kA-1cG" secondAttribute="trailing" constant="20" id="cSv-Hj-tsI"/>
+                            <constraint firstItem="Nsq-Ky-kn3" firstAttribute="leading" secondItem="fpO-Lr-qj3" secondAttribute="leading" constant="20" id="dDj-Aj-RRY"/>
+                            <constraint firstItem="k60-17-iVd" firstAttribute="top" secondItem="SuH-Yq-UyF" secondAttribute="bottom" constant="27" id="h4C-BF-Pl1"/>
+                            <constraint firstItem="8AP-m9-jVw" firstAttribute="top" secondItem="e1S-j9-PfK" secondAttribute="bottom" constant="20" id="p8g-fk-3C8"/>
+                            <constraint firstItem="k60-17-iVd" firstAttribute="leading" secondItem="fpO-Lr-qj3" secondAttribute="leading" constant="20" id="qn7-eA-qSp"/>
+                            <constraint firstAttribute="trailing" secondItem="e1S-j9-PfK" secondAttribute="trailing" constant="20" id="sO6-9e-kJL"/>
+                            <constraint firstItem="SuH-Yq-UyF" firstAttribute="top" secondItem="vEd-sE-0gO" secondAttribute="bottom" constant="25" id="ute-OB-8xC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RHP-4q-ZYd">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="SfZ-Bw-qm7">
+                            <connections>
+                                <action selector="cancel:" destination="rrU-Bl-NxZ" id="658-EU-xZT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="WLX-7C-8Wd">
+                            <connections>
+                                <segue destination="5dO-Vs-cr0" kind="unwind" identifier="DoneEvent" unwindAction="unwindToList:" id="ZWX-2y-exW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="eventAddress" destination="UE0-Yn-9G7" id="eJI-Le-ujI"/>
+                        <outlet property="eventAddressLabel" destination="k60-17-iVd" id="bq9-sh-ZD1"/>
+                        <outlet property="eventDate" destination="e1S-j9-PfK" id="RNn-jh-gaA"/>
+                        <outlet property="eventDateLabel" destination="w7G-hb-ISn" id="pzQ-fl-CQV"/>
+                        <outlet property="eventName" destination="elN-kA-1cG" id="hmL-ZK-76k"/>
+                        <outlet property="eventNameLabel" destination="SuH-Yq-UyF" id="SGW-dK-OVn"/>
+                        <outlet property="eventURL" destination="8AP-m9-jVw" id="Jzk-zE-UqX"/>
+                        <outlet property="eventURLLabel" destination="Nsq-Ky-kn3" id="lXS-5q-loj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gyI-WI-BYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5dO-Vs-cr0" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4264" y="562"/>
+        </scene>
         <!--Map Nav Controller-->
         <scene sceneID="jwI-xB-mQm">
             <objects>
@@ -143,6 +258,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wk2-v2-aJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3444" y="-942"/>
+        </scene>
+        <!--Add Event Nav Controller-->
+        <scene sceneID="4tk-4A-S2Q">
+            <objects>
+                <navigationController title="Add Event Nav Controller" automaticallyAdjustsScrollViewInsets="NO" id="AkB-SX-qTt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MxS-Rj-NNb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rrU-Bl-NxZ" kind="relationship" relationship="rootViewController" id="tEO-M0-rjT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8it-zZ-p8J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3436" y="562"/>
         </scene>
     </scenes>
     <resources>

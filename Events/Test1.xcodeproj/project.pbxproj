@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC05D1FC1AC746D300DBA979 /* EventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC05D1FB1AC746D300DBA979 /* EventsManager.swift */; };
 		DC06B51F1AAFB29E009C311A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC06B51E1AAFB29E009C311A /* CoreGraphics.framework */; };
 		DC06B5221AAFB31D009C311A /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC06B5201AAFB31D009C311A /* GoogleDataProvider.swift */; };
 		DC06B5231AAFB31D009C311A /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC06B5211AAFB31D009C311A /* GooglePlace.swift */; };
+		DC24A80A1AC5E8A200D261A9 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24A8091AC5E8A200D261A9 /* Events.swift */; };
+		DC24A80C1AC6039300D261A9 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24A80B1AC6039300D261A9 /* AddEventViewController.swift */; };
+		DC45B6041ACB722D00285F1E /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC45B6031ACB722D00285F1E /* libsqlite3.0.dylib */; };
+		DC45B6061ACB723400285F1E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC45B6051ACB723400285F1E /* libsqlite3.dylib */; };
 		DCC7F9361AAA80B000B0933B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7F9351AAA80B000B0933B /* AppDelegate.swift */; };
 		DCC7F9391AAA80B000B0933B /* Test1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCC7F9371AAA80B000B0933B /* Test1.xcdatamodeld */; };
 		DCC7F93B1AAA80B000B0933B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7F93A1AAA80B000B0933B /* MapViewController.swift */; };
@@ -55,9 +60,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC05D1FB1AC746D300DBA979 /* EventsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsManager.swift; sourceTree = "<group>"; };
 		DC06B51E1AAFB29E009C311A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DC06B5201AAFB31D009C311A /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleDataProvider.swift; path = "../../../Feed Me Starter/Feed Me/Model/GoogleDataProvider.swift"; sourceTree = "<group>"; };
 		DC06B5211AAFB31D009C311A /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GooglePlace.swift; path = "../../../Feed Me Starter/Feed Me/Model/GooglePlace.swift"; sourceTree = "<group>"; };
+		DC24A8091AC5E8A200D261A9 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		DC24A80B1AC6039300D261A9 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		DC45B6031ACB722D00285F1E /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		DC45B6051ACB723400285F1E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		DCC7F9301AAA80B000B0933B /* Test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC7F9341AAA80B000B0933B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCC7F9351AAA80B000B0933B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +112,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC45B6061ACB723400285F1E /* libsqlite3.dylib in Frameworks */,
+				DC45B6041ACB722D00285F1E /* libsqlite3.0.dylib in Frameworks */,
+				DCC7F9611AAA814800B0933B /* CoreData.framework in Frameworks */,
 				DC06B51F1AAFB29E009C311A /* CoreGraphics.framework in Frameworks */,
 				DCE63BB21AACE32C001EBCDF /* MapKit.framework in Frameworks */,
 				DCE63BB01AACE081001EBCDF /* libobjc.dylib in Frameworks */,
@@ -118,7 +131,6 @@
 				DCC7F9671AAA815E00B0933B /* GLKit.framework in Frameworks */,
 				DCC7F9651AAA815600B0933B /* CoreText.framework in Frameworks */,
 				DCC7F9631AAA815000B0933B /* CoreLocation.framework in Frameworks */,
-				DCC7F9611AAA814800B0933B /* CoreData.framework in Frameworks */,
 				DCC7F95F1AAA814200B0933B /* AVFoundation.framework in Frameworks */,
 				DCC7F95C1AAA810F00B0933B /* GoogleMaps.framework in Frameworks */,
 			);
@@ -169,8 +181,11 @@
 			isa = PBXGroup;
 			children = (
 				DCC7F9351AAA80B000B0933B /* AppDelegate.swift */,
+				DC05D1FB1AC746D300DBA979 /* EventsManager.swift */,
+				DC24A8091AC5E8A200D261A9 /* Events.swift */,
 				DCDC727F1AC25FAF00DACC04 /* EventListViewController.swift */,
 				DCC7F93A1AAA80B000B0933B /* MapViewController.swift */,
+				DC24A80B1AC6039300D261A9 /* AddEventViewController.swift */,
 				DCC7F93C1AAA80B000B0933B /* Main.storyboard */,
 				DCC7F93F1AAA80B000B0933B /* Images.xcassets */,
 				DCC7F9411AAA80B000B0933B /* LaunchScreen.xib */,
@@ -213,6 +228,8 @@
 		DCC7F95D1AAA811200B0933B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC45B6051ACB723400285F1E /* libsqlite3.dylib */,
+				DC45B6031ACB722D00285F1E /* libsqlite3.0.dylib */,
 				DC06B51E1AAFB29E009C311A /* CoreGraphics.framework */,
 				DCE63BB11AACE32C001EBCDF /* MapKit.framework */,
 				DCE63BAF1AACE081001EBCDF /* libobjc.dylib */,
@@ -344,9 +361,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC7F93B1AAA80B000B0933B /* MapViewController.swift in Sources */,
+				DC24A80C1AC6039300D261A9 /* AddEventViewController.swift in Sources */,
 				DCDC72801AC25FAF00DACC04 /* EventListViewController.swift in Sources */,
+				DC05D1FC1AC746D300DBA979 /* EventsManager.swift in Sources */,
 				DC06B5221AAFB31D009C311A /* GoogleDataProvider.swift in Sources */,
 				DC06B5231AAFB31D009C311A /* GooglePlace.swift in Sources */,
+				DC24A80A1AC5E8A200D261A9 /* Events.swift in Sources */,
 				DCC7F9361AAA80B000B0933B /* AppDelegate.swift in Sources */,
 				DCC7F9391AAA80B000B0933B /* Test1.xcdatamodeld in Sources */,
 			);
