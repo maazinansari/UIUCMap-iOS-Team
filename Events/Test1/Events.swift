@@ -41,7 +41,4 @@ class Events: NSObject, NSCoding {
         self.date = date
         self.eventURL = eventURL
     }
-    
-    
-    
 }

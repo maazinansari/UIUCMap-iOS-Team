@@ -13,6 +13,8 @@ import QuartzCore
 class AddEventViewController: UIViewController{
     
     var newEvent: Events?
+    var databasePath = NSString()
+    let dateFormatter = NSDateFormatter()
     
     @IBAction func cancel(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
@@ -35,6 +37,7 @@ class AddEventViewController: UIViewController{
             let date=eventDate.text
             let url=eventURL.text
             if (!name.isEmpty && !address.isEmpty && !date.isEmpty){
+                //let date2 = dateFormatter.dateFromString(date)
                 newEvent=Events(name: name, address: address, date: date, eventURL: url)
             }
             

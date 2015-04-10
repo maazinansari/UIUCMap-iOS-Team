@@ -14,6 +14,18 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var addressLabel: UILabel!
     
+    /*@IBAction func showOnMap(segue: UIStoryboardSegue){
+        if segue.identifier == "selectedEvent"{
+            let showEventController = segue.sourceViewController as EventListViewController
+            let focusAddress = showEventController.address
+            var geocoder = CLGeocoder()
+            geocoder.geocodeAddressString (focusAddress, {(placesmarks: AnyObject[]!, error: NSError!) -> Void
+                if let placemark = placemarks?[0] as? CLPlacemark {
+                    self.mapView.addAnnotation(MKPlacemark(placemark: placemark))}
+                })
+        }
+    }*/
+    
         
     let locationManager=CLLocationManager()
     

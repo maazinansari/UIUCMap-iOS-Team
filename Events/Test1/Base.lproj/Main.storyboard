@@ -93,6 +93,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="fJB-mt-61R" kind="unwind" identifier="selectedEvent" unwindAction="showOnMap:" id="dyS-o9-n6x"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -109,6 +112,7 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MsH-xa-7bu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fJB-mt-61R" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4256" y="-183"/>
         </scene>

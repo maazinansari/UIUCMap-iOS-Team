@@ -12,6 +12,7 @@ import UIKit
 class EventListViewController : UITableViewController {
 
     let eventsManager = EventsManager()
+    var address:String?
     
     @IBAction func unwindToList(segue: UIStoryboardSegue) {
         
@@ -36,12 +37,20 @@ class EventListViewController : UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("ListViewCell", forIndexPath: indexPath) as UITableViewCell
+        let eventCell = tableView.dequeueReusableCellWithIdentifier("ListViewCell", forIndexPath: indexPath) as UITableViewCell
         let event = eventsManager.createdEvents[indexPath.row]
-        cell.textLabel?.text =  event.name
+        eventCell.textLabel?.text =  event.name
         
-        return cell
+        return eventCell
 
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "selectedEvent"{
+            let cellIndex = tableView.indexPathForSelectedRow();
+            let tempIndex = cellIndex?.row
+            let address = eventsManager.createdEvents[tempIndex!].address
+        }
     }
     
     override func viewWillAppear(animated: Bool) {

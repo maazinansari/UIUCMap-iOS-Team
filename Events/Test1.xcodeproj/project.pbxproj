@@ -15,6 +15,11 @@
 		DC24A80C1AC6039300D261A9 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24A80B1AC6039300D261A9 /* AddEventViewController.swift */; };
 		DC45B6041ACB722D00285F1E /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC45B6031ACB722D00285F1E /* libsqlite3.0.dylib */; };
 		DC45B6061ACB723400285F1E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC45B6051ACB723400285F1E /* libsqlite3.dylib */; };
+		DC949F271ACC9D680031818E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = DC949F1E1ACC9D680031818E /* FMDatabase.m */; };
+		DC949F281ACC9D680031818E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = DC949F201ACC9D680031818E /* FMResultSet.m */; };
+		DC949F291ACC9D680031818E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DC949F221ACC9D680031818E /* FMDatabaseQueue.m */; };
+		DC949F2A1ACC9D680031818E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DC949F241ACC9D680031818E /* FMDatabaseAdditions.m */; };
+		DC949F2B1ACC9D680031818E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = DC949F261ACC9D680031818E /* FMDatabasePool.m */; };
 		DCC7F9361AAA80B000B0933B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7F9351AAA80B000B0933B /* AppDelegate.swift */; };
 		DCC7F9391AAA80B000B0933B /* Test1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCC7F9371AAA80B000B0933B /* Test1.xcdatamodeld */; };
 		DCC7F93B1AAA80B000B0933B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7F93A1AAA80B000B0933B /* MapViewController.swift */; };
@@ -68,6 +73,18 @@
 		DC24A80B1AC6039300D261A9 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		DC45B6031ACB722D00285F1E /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		DC45B6051ACB723400285F1E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DC949F1B1ACC95F80031818E /* events.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = events.db; sourceTree = "<group>"; };
+		DC949F1C1ACC9D680031818E /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = fmdb/src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		DC949F1D1ACC9D680031818E /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = fmdb/src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		DC949F1E1ACC9D680031818E /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = fmdb/src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		DC949F1F1ACC9D680031818E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = fmdb/src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		DC949F201ACC9D680031818E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = fmdb/src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		DC949F211ACC9D680031818E /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = fmdb/src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		DC949F221ACC9D680031818E /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = fmdb/src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		DC949F231ACC9D680031818E /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = fmdb/src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		DC949F241ACC9D680031818E /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = fmdb/src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		DC949F251ACC9D680031818E /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = fmdb/src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		DC949F261ACC9D680031818E /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = fmdb/src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
 		DCC7F9301AAA80B000B0933B /* Test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC7F9341AAA80B000B0933B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCC7F9351AAA80B000B0933B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +207,17 @@
 				DCC7F93F1AAA80B000B0933B /* Images.xcassets */,
 				DCC7F9411AAA80B000B0933B /* LaunchScreen.xib */,
 				DCC7F9371AAA80B000B0933B /* Test1.xcdatamodeld */,
+				DC949F1C1ACC9D680031818E /* FMDB.h */,
+				DC949F1D1ACC9D680031818E /* FMDatabase.h */,
+				DC949F1E1ACC9D680031818E /* FMDatabase.m */,
+				DC949F1F1ACC9D680031818E /* FMResultSet.h */,
+				DC949F201ACC9D680031818E /* FMResultSet.m */,
+				DC949F211ACC9D680031818E /* FMDatabaseQueue.h */,
+				DC949F221ACC9D680031818E /* FMDatabaseQueue.m */,
+				DC949F231ACC9D680031818E /* FMDatabaseAdditions.h */,
+				DC949F241ACC9D680031818E /* FMDatabaseAdditions.m */,
+				DC949F251ACC9D680031818E /* FMDatabasePool.h */,
+				DC949F261ACC9D680031818E /* FMDatabasePool.m */,
 				DCC7F9331AAA80B000B0933B /* Supporting Files */,
 			);
 			path = Test1;
@@ -198,6 +226,7 @@
 		DCC7F9331AAA80B000B0933B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DC949F1B1ACC95F80031818E /* events.db */,
 				DCD205641AC3A3FD00312C0C /* eventicon2 copy.png */,
 				DCD205621AC3A38400312C0C /* eventicon.png */,
 				DCD205661AC3A4EE00312C0C /* eventicon3.png */,
@@ -303,6 +332,7 @@
 				TargetAttributes = {
 					DCC7F92F1AAA80B000B0933B = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 2S3D8J8M3T;
 					};
 					DCC7F9471AAA80B000B0933B = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -363,10 +393,15 @@
 				DCC7F93B1AAA80B000B0933B /* MapViewController.swift in Sources */,
 				DC24A80C1AC6039300D261A9 /* AddEventViewController.swift in Sources */,
 				DCDC72801AC25FAF00DACC04 /* EventListViewController.swift in Sources */,
+				DC949F271ACC9D680031818E /* FMDatabase.m in Sources */,
 				DC05D1FC1AC746D300DBA979 /* EventsManager.swift in Sources */,
+				DC949F291ACC9D680031818E /* FMDatabaseQueue.m in Sources */,
 				DC06B5221AAFB31D009C311A /* GoogleDataProvider.swift in Sources */,
 				DC06B5231AAFB31D009C311A /* GooglePlace.swift in Sources */,
+				DC949F2A1ACC9D680031818E /* FMDatabaseAdditions.m in Sources */,
 				DC24A80A1AC5E8A200D261A9 /* Events.swift in Sources */,
+				DC949F281ACC9D680031818E /* FMResultSet.m in Sources */,
+				DC949F2B1ACC9D680031818E /* FMDatabasePool.m in Sources */,
 				DCC7F9361AAA80B000B0933B /* AppDelegate.swift in Sources */,
 				DCC7F9391AAA80B000B0933B /* Test1.xcdatamodeld in Sources */,
 			);
