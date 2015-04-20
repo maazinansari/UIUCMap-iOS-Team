@@ -8,6 +8,8 @@
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Detect user&apos;s location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Authorizes uses of location</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.example.$(PRODUCT_NAME:rfc1034identifier)</string>
 	<key>CFBundleInfoDictionaryVersion</key>

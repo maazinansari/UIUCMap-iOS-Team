@@ -13,6 +13,9 @@ class EventListViewController : UITableViewController {
 
     let eventsManager = EventsManager()
     var address:String?
+    var latD:CLLocationDegrees?
+    var lonD:CLLocationDegrees?
+    var coords:CLLocationCoordinate2D?
     
     @IBAction func unwindToList(segue: UIStoryboardSegue) {
         
@@ -50,6 +53,9 @@ class EventListViewController : UITableViewController {
             let cellIndex = tableView.indexPathForSelectedRow();
             let tempIndex = cellIndex?.row
             let address = eventsManager.createdEvents[tempIndex!].address
+            let latD = eventsManager.createdEvents[tempIndex!].eventLat
+            let lonD = eventsManager.createdEvents[tempIndex!].eventLon
+            let coords = CLLocationCoordinate2DMake(latD, lonD)
         }
     }
     

@@ -18,6 +18,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         if segue.identifier == "selectedEvent"{
             let showEventController = segue.sourceViewController as EventListViewController
             let focusAddress = showEventController.address
+            let markPos = showEventController.coords
             var geocoder = CLGeocoder()
             geocoder.geocodeAddressString (focusAddress, {(placesmarks: AnyObject[]!, error: NSError!) -> Void
                 if let placemark = placemarks?[0] as? CLPlacemark {

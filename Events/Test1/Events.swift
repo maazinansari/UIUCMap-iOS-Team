@@ -15,17 +15,24 @@ class Events: NSObject, NSCoding {
     let AddressKey = "AddressKey"
     let DateKey = "DateKey"
     let EventURLKey = "EventURLKey"
+    let LatKey = "LatKey"
+    let LonKey = "LonKey"
     
     let name : String
     let address : String
     let date : String
     let eventURL: String
+    let eventLat: CLLocationDegrees
+    let eventLon: CLLocationDegrees
     
     required init(coder aDecoder: NSCoder) {
         name = aDecoder.decodeObjectForKey(NameKey) as String
         address = aDecoder.decodeObjectForKey(AddressKey) as String
         date = aDecoder.decodeObjectForKey(DateKey) as String
         eventURL = aDecoder.decodeObjectForKey(EventURLKey) as String
+        eventLat = aDecoder.decodeObjectForKey(LatKey) as CLLocationDegrees
+        eventLon = aDecoder.decodeObjectForKey(LonKey) as CLLocationDegrees
+
     }
     
     func encodeWithCoder(aCoder: NSCoder) {
@@ -33,6 +40,10 @@ class Events: NSObject, NSCoding {
         aCoder.encodeObject(address, forKey: AddressKey)
         aCoder.encodeObject(date, forKey: DateKey)
         aCoder.encodeObject(eventURL, forKey: EventURLKey)
+        aCoder.encodeObject(eventLat, forKey: LatKey)
+        aCoder.encodeObject(eventLon, forKey: LonKey)
+
+        
     }
     
     init (name: String, address: String, date: String, eventURL : String){
@@ -40,5 +51,7 @@ class Events: NSObject, NSCoding {
         self.address = address
         self.date = date
         self.eventURL = eventURL
+        self.eventLat = 40.1094
+        self.eventLon = -88.2272
     }
 }
