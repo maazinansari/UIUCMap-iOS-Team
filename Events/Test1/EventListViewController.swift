@@ -16,6 +16,7 @@ class EventListViewController : UITableViewController {
     var latD:CLLocationDegrees?
     var lonD:CLLocationDegrees?
     var coords:CLLocationCoordinate2D?
+    var name:String?
     
     @IBAction func unwindToList(segue: UIStoryboardSegue) {
         
@@ -52,11 +53,19 @@ class EventListViewController : UITableViewController {
         if segue.identifier == "selectedEvent"{
             let cellIndex = tableView.indexPathForSelectedRow();
             let tempIndex = cellIndex?.row
-            let address = eventsManager.createdEvents[tempIndex!].address
-            let latD = eventsManager.createdEvents[tempIndex!].eventLat
-            let lonD = eventsManager.createdEvents[tempIndex!].eventLon
-            let coords = CLLocationCoordinate2DMake(latD, lonD)
+            name = eventsManager.createdEvents[tempIndex!].name
+            address = eventsManager.createdEvents[tempIndex!].address
+            latD = eventsManager.createdEvents[tempIndex!].eventLat
+            lonD = eventsManager.createdEvents[tempIndex!].eventLon
+            coords = CLLocationCoordinate2DMake(latD!, lonD!)
+            
+            var destMapController = segue.destinationViewController as? MapViewController
+            if let destMapController = destMapController {
+                destMapController.showOnMap(segue)
+                println("worked")
+            }
         }
+        println("segue fired")
     }
     
     override func viewWillAppear(animated: Bool) {

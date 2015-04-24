@@ -30,7 +30,6 @@ class AddEventViewController: UIViewController{
     @IBOutlet weak var eventURL: UITextField!
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
         if segue.identifier == "DoneEvent"{
             let name=eventName.text
             let address=eventAddress.text

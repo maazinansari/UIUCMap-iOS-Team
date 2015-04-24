@@ -94,7 +94,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="fJB-mt-61R" kind="unwind" identifier="selectedEvent" unwindAction="showOnMap:" id="dyS-o9-n6x"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="selectedEvent" id="VsR-Mv-s1k"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -112,7 +112,6 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MsH-xa-7bu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="fJB-mt-61R" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4256" y="-183"/>
         </scene>
@@ -286,4 +285,7 @@
         <image name="eventicon4.png" width="30" height="30"/>
         <image name="mapicon2.png" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="VsR-Mv-s1k"/>
+    </inferredMetricsTieBreakers>
 </document>

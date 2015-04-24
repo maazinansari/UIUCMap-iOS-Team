@@ -14,18 +14,25 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var addressLabel: UILabel!
     
-    /*@IBAction func showOnMap(segue: UIStoryboardSegue){
-        if segue.identifier == "selectedEvent"{
+    var marker: GMSMarker?
+    
+    @IBAction func showOnMap(segue: UIStoryboardSegue){
+            println("segue check")
             let showEventController = segue.sourceViewController as EventListViewController
             let focusAddress = showEventController.address
-            let markPos = showEventController.coords
-            var geocoder = CLGeocoder()
-            geocoder.geocodeAddressString (focusAddress, {(placesmarks: AnyObject[]!, error: NSError!) -> Void
+            var position = showEventController.coords
+            //position = CLLocationCoordinate2DMake(10, 10)
+            let name = showEventController.name
+            /*var geocoder = CLGeocoder()
+            geocoder.geocodeAddressString (focusAddress, {(placesmarks: AnyObject[]!, error: NSError!)-> Void
                 if let placemark = placemarks?[0] as? CLPlacemark {
                     self.mapView.addAnnotation(MKPlacemark(placemark: placemark))}
-                })
-        }
-    }*/
+                })*/
+            marker = GMSMarker(position: position!)
+            println("is marker working? I hope so")
+            marker!.title = name
+            //marker!.map = mapView
+    }
     
         
     let locationManager=CLLocationManager()
@@ -92,6 +99,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         mapView.delegate=self
+        println("loading")
+        /*var position = CLLocationCoordinate2DMake(10, 10)
+        var marker = GMSMarker(position: position)
+        marker.title = "test"
+        marker.map = mapView*/
+        
+        if let marker = marker {
+            marker.map = mapView
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -105,7 +121,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
